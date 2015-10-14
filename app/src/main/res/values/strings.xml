@@ -1,6 +1,24 @@
 <resources>
-    <string name="app_name">SocialApp</string>
+    <string name="app_name">MSNA</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="welcome">Welcome!</string>
+    <string name="HintInput">账号：</string>
+    <string name="HintPwd">密码：</string>
+    <string name="login_acc">账号密码登录</string>
+    <string name="login">登   录</string>
+    <string name="RememberPwd">记住密码</string>
+    <string name="ForgetPwd">忘记密码？</string>
+    <string name="noAccount">没有账号？请点击</string>
+    <string name="Register"><u>注册</u></string>
+    <string name="title_activity_register">register</string>
+    <string name="InputUsername">账号:</string>
+    <string name="InputPwd">密码:</string>
+    <string name="PwdAgain">确认密码:</string>
+    <string name="MailTip">请输入常用邮箱，便于找回密码</string>
+    <string name="InputMail">请输入您的邮箱</string>
+    <string name="RegCommit">提   交</string>
+    <string name="title_activity_main">Main</string>
 </resources>

@@ -1,5 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="android:Theme.Material.Light">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <!-- customize the color palette -->
+        <item name="android:colorPrimary">@color/myPrimary</item>
+        <item name="android:colorPrimaryDark">@color/myPrimaryDark</item>
+        <item name="android:colorAccent">@color/myAccent</item>
+
+        <item name="android:actionOverflowButtonStyle">@style/myOverflowButton</item>
+
+    </style>
+
+    <style name="myOverflowButton" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+
+    </style>
+
+
+    <style name="NoActionBar" parent="android:Theme.Holo.Light.NoActionBar"/>
+
+    <style name="TextStyle">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:textColor">@color/TextColor2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/border</item>
     </style>
 </resources>

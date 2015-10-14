@@ -1,22 +1,23 @@
 package com.fdu.socialapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toolbar;
+import android.view.View;
 
-public class Main extends Activity {
-
+public class Login extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        final User user = (User) getApplication();
         super.onCreate(savedInstanceState);
-        getIntent();
-        setContentView(R.layout.activity_main);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.id_toolbar);
-        setActionBar(toolbar);
-
+        if (user.isLogin()){
+            Intent intent = new Intent(this, Main.class);
+            startActivity(intent);
+            finish();
+        }
+        setContentView(R.layout.activity_login);
     }
 
     @Override
@@ -39,5 +40,13 @@ public class Main extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void login(View view){
+        final User user = (User) getApplication();
+        user.login();
+        Intent intent = new Intent(this, Main.class);
+        startActivity(intent);
+        finish();
     }
 }
